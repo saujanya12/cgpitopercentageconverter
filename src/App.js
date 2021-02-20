@@ -21,8 +21,8 @@ function App() {
           <Route exact path='/ShivajiUniversity' component={ShivajiUniversity} />
           <Route exact path='/NagpurUniversity' component={NagpurUniversity} />
           <Route exact path='/NorthMaharashtraUniversity' component={NorthMaharashtraUniversity} />
+          <Route exact path='/Footer' component={Footer} />
         </Switch>
-        <Footer />
       </div>
 
     </BrowserRouter>
