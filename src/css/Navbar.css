@@ -1,0 +1,26 @@
+.navbar{
+    background-color: black;
+    color: white;
+}
+.navbar-brand{
+    font-family: 'Balsamiq Sans', cursive;
+}
+img{
+    width: 90px;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom:auto;
+    padding-left: 0px;
+}
+
+
+.bColor{
+    border: 4px solid green;
+}
+
+.borderColor{
+    border: 4px solid yellow;
+}

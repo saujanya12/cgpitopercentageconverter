@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
+import MU from './component/MU';
+import Navbar from './component/Navbar';
+import Sidebar from './component/Sidebar';
+import Pune from './component/Pune';
+import ShivajiUniversity from './component/ShivajiUniversity';
+import NagpurUniversity from './component/NagpurUniversity';
+import NorthMaharashtraUniversity from './component/NorthMaharashtraUniversity';
+import Footer from './component/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App ">
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={MU} />
+          <Route exact path='/PuneUniversity' component={Pune} />
+          <Route exact path='/ShivajiUniversity' component={ShivajiUniversity} />
+          <Route exact path='/NagpurUniversity' component={NagpurUniversity} />
+          <Route exact path='/NorthMaharashtraUniversity' component={NorthMaharashtraUniversity} />
+        </Switch>
+        <Footer />
+      </div>
+
+    </BrowserRouter>
   );
 }
 
